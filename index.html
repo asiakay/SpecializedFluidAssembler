@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- based on https://codesource.io/build-a-budget-app-with-html-css-and-javascript/ -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Budget App</title>
+
+<!-- css  -->
+    <link rel="stylesheet" href="style.css" />
+<!-- font awesome css  -->  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+
+
+
+
+<!-- Drop down modal -->
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <div class="modal-header">
+          <span class="close">&times;</span>
+        </div><!-- .modal-header -->
+        <div class="modal-body">
+          <div class="budget-form" id="budgetform">
+            <form id="addForm">
+              <!-- tooltip text -->
+
+<div>
+  <label for="">Enter Budget<div class="tooltip">
+      <span class="tooltiptexttop"></span>
+      <!-- icon -->
+<span class="tooltiptext">icon</span></label>
+</div><!-- .tooltip -->
+<!--           <i class="fa fa-info-circle" style="font-size:16px">
+            </i> 
+Current assets, savings and money in the bank or under your mattress on day one the success challenge. Round up to the nearest whole number.--> 
+
+<!-- add tooltip info -->
+    <div class="tooltip">
+      <span class="tooltiptexttop"></span>
+      <!-- icon -->
+<span class="tooltiptext">icon</span></label>
+</div><!-- .tooltip -->
+
+<br> 
+            $ <input type="number" id="number" />
+
+</div>
+              
+
+                
+
+               <div class="tooltipToR">
+                  <div class="tooltiptextToR" id="" >
+                <span class=""></span>
+              </div> <!-- .tooltiptextToR -->
+               </div><!-- .tooltipToR -->
+
+              <div class="" id="">
+              <br />
+               <br />
+              <button type="submit">Add Budget</button>
+            </form>
+          </div>
+          </div>
+
+          <div class="expense-form" id="expense-form">
+            <form action="" id="expForm">
+              <div class=""></div>
+
+
+
+
+                <label for="">select your expense</label> <br />
+
+<select name="costs" id="expName">
+
+  <option value="Investment">Investment</option>
+ <option value="Savings">Savings</option>
+ <option value="High Interest Debt">High Interest Debt</option>
+  <option value="Transportation">Transportation</option>
+    <option 
+    value="Living">Living</option>
+    <option value="Taxes">Taxes</option>
+<option value="Toyota">Toyota</option>
+  <option value="Volkswagon">Volkswagon</option>
+  <option value="Hyundai">Hyundai</option>
+  <option value="Ford">Ford</option>
+</select>
+
+
+          
+  
+              </div>
+              <div class="">
+                <label for="">enter cost of purchase in US dollars</label> <br />
+                <input type="number" id="expNumber" />
+              </div>
+              <button type="submit" id="submitExpen">Add expense</button>
+            </form>
+            <button onclick="callBudget()" id="bug">
+              Back to add budget ->
+            </button>
+          </div><!-- modal-body -->
+          <div class="edit-form" id="editForm">
+            <form action="" id="saveEdit">
+              <div class="expense">
+                <label for="">Edit your expense</label> <br />
+                <input type="text" id="editExpName" />
+              </div><!-- .expense -->
+              <div class="">
+                <label for="">Edit expense amount</label> <br />
+                <input type="number" id="editExpNumber" />
+              </div>
+              <button type="submit">Save changes</button>
+            </form>
+          </div><!-- .edit-form -->
+        </div>
+      </div><!-- .myModal -->
+
+
+
+    <!--  -->
+    <div class="container">
+      <div class="header">
+        <h1>Budget App</h1>
+      </div>
+
+
+<!-- budget display -->
+      <div class="budget-section">
+        <div class="budget col col-md col-sm">
+          <h2>budget</h2>
+          <img src="image/money-bag.svg" width="40" alt="" />
+          <p class="amount">$ <span id="budgetAmount">0</span></p>
+        </div>
+      
+      <!-- expense display -->
+        <div class="expenses col col-md col-sm">
+          <h2>expenses</h2>
+          <img src="image/accounting.svg" width="40" alt="" />
+          <p class="exp-amount">$ <span id="expensesAmount">0</span></p>
+        </div>
+        <div class="balance col col-md col-sm">
+
+          <!-- balance display -->
+          <h2>balance</h2>
+          <img src="image/law.svg" width="40" alt="" />
+          <p class="amount bala">$ <span id="balanceAmount">0</span></p>
+        </div>
+      </div>
+
+      <!-- add expense form button -->
+      <div id="displayExpenses">
+        <div class="budget-list">
+          <div class="col">
+            <h4>expense title</h4>
+          </div>
+          <div class="col">
+            <h4>expense value</h4>
+          </div>
+          <div class="col"></div>
+        </div>
+        <div id="expValue"></div>
+      </div>
+
+<!-- add tooltip info -->
+    <div class="tooltip">
+      <span class="tooltiptexttop"></span>
+    <div class="toggle">
+      <button id="myBtn" type="button">
+        <span class="tooltiptext">Add Expense</span>
+        </button>
+    </div><!-- .toggle -->
+    </div><!-- .tooltip -->
+    </div><!-- .container -->
+
+    </div>
+    
+    <script src="script.js"></script>
+<!--     <script src="toggleModes.js"></script> -->
+  </body>
+</html>

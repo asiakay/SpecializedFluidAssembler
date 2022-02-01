@@ -1,0 +1,83 @@
+
+
+/* .tooltipAnswer {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+  transition: width 2s, height 2s, background-color 2s, transform 2s;
+
+} */
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+
+}
+
+.tooltiptop {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+
+}
+
+/* .tooltipAnswer {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+  transition: width 2s, height 2s, background-color 2s, transform 2s;
+
+} */
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+  transition: all 0.5s ease-out;
+
+
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: justify;
+  border-radius: 6px;
+  padding: 5px 0;
+  font-size: 16px;
+  
+
+
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+  top: -5px;
+  right: 105%;
+  
+
+    /* fade in transition  */
+  transition-property: font-size;
+  transition-duration: 4s;
+  transition-delay: 2s;
+  
+}
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  padding: 16px;
+  transform: rotate(0deg);
+}
+
+
+/* .tooltipAnswer:hover .tooltiptext {
+  visibility: visible;
+  padding: 16px;
+  transform: rotate(180deg);
+ */
+ 
+/* https://www.w3schools.com/css/tryit.asp?filename=trycss_tooltip_left */
+
+

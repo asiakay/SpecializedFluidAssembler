@@ -1,0 +1,374 @@
+@import url('https://fonts.googleapis.com/css2?family=Dongle:wght@300&family=Open+Sans+Condensed:wght@300&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Luxurious+Roman&display=swap');
+
+body {
+  font-family: 'Dongle', sans-serif;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: #f5f5f5;
+  
+}
+
+.dark-mode {
+  background-color: black;
+  color: white;
+}
+
+.container {
+  min-height: 80vh;
+}
+
+.header {
+  height: 60px;
+  width: 100%;
+  font-family: 'Dongle', sans-serif;
+}
+
+h1, h2 {
+  margin: 0;
+  text-align: center;
+/*   font-family: 'Dongle', sans-serif;  padding-top: 10px; */
+  font-family: 'Luxurious Roman', cursive;
+}
+
+
+tooltopToR {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+  
+  } 
+
+
+.tooltipToR .tooltiptextToR {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  
+ /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+  top: -5px;
+  right: 0%;
+
+  /* transition: the tooltip */
+
+
+}
+
+.tooltipToR:hover .tooltiptextToR {
+  visibility: visible;
+  width: 300px;
+  height: 300px;
+}
+
+
+
+
+/* tooltip :left */
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  
+ /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+  top: -5px;
+  right: 0%;
+
+  /* transition: the tooltip */
+
+
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  width: 300px;
+  height: 300px;
+}
+
+
+
+/* tooltip :top */
+.tooltiptop {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+
+}
+
+.tooltiptop .tooltiptexttop {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  
+ /* Position the tooltip top */
+  position: absolute;
+  z-index: 1;
+  top: -5px;
+  right: 105%;
+
+  bottom: 100%;
+  left: 50%;
+  margin-top: -60px; /* Use half of the width (120/2 = 60), to center the tooltip */
+
+  /* transition: the tooltip */
+  transition: width 2s;
+
+
+}
+
+.tooltiptop:hover .tooltiptext {
+  visibility: visible;
+  width: 300px;
+  height: 300px;
+}
+
+
+.budget-section {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  width: 100%;
+  min-height: 160px;
+  font-weight: 900;
+  font-family: 'Luxurious Roman', cursive;
+} 
+.budget-list {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  width: 100%;
+  height: 70px;
+  font-size: 20px;
+  font-family: 'Luxurious Roman', cursive;
+} 
+.exp-amount {
+  color: #b80c09;
+}
+.amount {
+  color: #317b22;
+}
+.col {
+  width: 40%;
+  text-align: center;
+  text-transform: capitalize;
+}
+.col p {
+  font-size: 40px;
+  padding-top: 5px;
+  margin: 0;
+}
+.toggle {
+  position: fixed;
+  right: 0;
+  bottom: 18px;
+}
+.toggle button {
+  border: none;
+  border-radius: 600px;
+  background: #04458f;
+  padding: 14px 20px;
+  color: #ffffff;
+  font-size: 30px;
+  margin: 10px 50px 0 0;
+  cursor: pointer;
+}
+/* modal form */
+.budget-form {
+  width: 100%;
+  min-height: 200px;
+  font-family: 'Luxurious Roman', cursive;
+}
+form {
+  margin: 10px 0 20px 10px;
+  min-height: 100px;
+  font-family: 'Luxurious Roman', cursive;
+}
+input {
+  width: 60%;
+  padding: 8px 0;
+  border-radius: 6px;
+  border: 1px solid gray;
+  margin: 20px 0;
+  padding-left: 5px;
+  color: #495057;
+  font-family: 'Luxurious Roman', cursive;
+}
+
+button{
+  font-family: 'Luxurious Roman', cursive;
+}
+.budget-list .exp p {
+  color: #b80c09;
+  font-size: 18px;
+}
+#displayExpenses {
+  width: 100%;
+  display: none;
+    font-family: 'Luxurious Roman', cursive;
+}
+.expValue {
+  display: flex;
+  justify-content: space-around;
+  height: 40px;
+  font-weight: 900;
+  text-align: center;
+}
+#expTitleName {
+  width: 40%;
+}
+#expValueAmount {
+  width: 40%;
+}
+#edite_delete {
+  width: 40%;
+}
+#edite_delete img {
+  cursor: pointer;
+}
+#edite_delete button {
+  margin-left: 1px;
+  background: none;
+  border: none;
+}
+.budget-form button {
+  background: rgb(1, 83, 1);
+  border: none;
+  border-radius: 6px;
+  color: #ffffff;
+  padding: 10px 40px;
+  cursor: pointer;
+  text-transform: capitalize;
+  font-size: 16px;
+  font-weight: 400;
+}
+#bug {
+  font-size: 14px;
+  background: none;
+  color: #04458f;
+  margin: 0px 0px 15px 10px;
+  text-align: justify;
+  padding: 0;
+  font-family: 'Luxurious Roman', cursive;
+}
+#expense-form {
+  width: 100%;
+  display: none;
+}
+#editForm {
+  display: none;
+  width: 100%;
+}
+#editForm button {
+  background: #b80c09;
+  border: none;
+  border-radius: 6px;
+  color: #ffffff;
+  padding: 10px 30px;
+  cursor: pointer;
+  text-transform: capitalize;
+  font-size: 16px;
+  font-weight: 400;
+}
+.expense-form button {
+  background: #b80c09;
+  border: none;
+  border-radius: 6px;
+  color: #ffffff;
+  padding: 10px 30px;
+  cursor: pointer;
+  text-transform: capitalize;
+  font-size: 16px;
+  font-weight: 400;
+}
+/* The Modal (background) */
+.modal {
+  display: block;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+  animation-name: fadeIn;
+  animation-duration: 0.4s;
+  text-transform: capitalize;
+  font-weight: 600;
+}
+
+/* Modal Content */
+.modal-content {
+  position: fixed;
+  top: 20%;
+  left: 25%;
+  background-color: #fefefe;
+  width: 50%;
+  min-height: 40px;
+  animation-name: slideIn;
+  animation-duration: 0.4s;
+  border-radius: 30px;
+  background: linear-gradient(to left, #EBBAB9, #B5FFE1);
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  float: right;
+  font-size: 80px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.modal-header {
+  padding: 2px 16px;
+  border-bottom: 0px solid gray;
+}
+.modal-body {
+  padding: 2px 16px;
+}
+
+/* Add Animation */
+@keyframes slideIn {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
